@@ -1,4 +1,4 @@
-.game-container {
+.game-container { 
   text-align: center;
   font-family: "Roboto Condensed", serif;
   background: #172d4f;
@@ -9,10 +9,12 @@
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  padding: 10px; 
 }
-#game-title{
-  color: #9bb0c6;
 
+#game-title {
+  color: #9bb0c6;
+  font-size: 2em; 
 }
 
 .color-box {
@@ -28,16 +30,16 @@
   justify-content: center;
   gap: 10px;
   margin: 20px 0;
+  flex-wrap: wrap; 
 }
 
 .color-option {
-  width: 100px;;
+  width: 100px;
   height: 80px;
   border: 1px solid #ece7e7;
   border-radius: 20px;
   cursor: pointer;
   transition: transform 0.2s ease-in-out;
-
 }
 
 .color-option:hover {
@@ -49,6 +51,7 @@
   margin: 10px 0;
   color: #9bb0c6;
 }
+
 .game-status.correct {
   color: #00ff00;
 }
@@ -78,4 +81,68 @@
 
 .new-game-btn:hover {
   background-color: #303335;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+  .color-box {
+    width: 100px; 
+    height: 100px; 
+  }
+
+  .color-option {
+    width: 80px; 
+    height: 60px;
+  }
+
+  #game-title {
+    font-size: 1.8em; 
+  }
+
+  .game-status {
+    font-size: 20px; 
+  }
+
+  .score {
+    font-size: 18px;
+  }
+
+  .new-game-btn {
+    width: 120px; 
+    font-size: 18px; 
+  }
+
+  .options-container {
+    gap: 5px; 
+  }
+}
+
+
+@media (max-width: 480px) {
+  .color-box {
+    width: 90px; 
+    height: 90px;
+  }
+
+  .color-option {
+    width: 70px; 
+    height: 50px;
+  }
+
+  .new-game-btn {
+    width: 100px; 
+    font-size: 16px; 
+  }
+
+  .game-status {
+    font-size: 18px; 
+  }
+
+  .score {
+    font-size: 16px; 
+  }
+
+  #game-title {
+    font-size: 1.5em; 
+  }
 }
